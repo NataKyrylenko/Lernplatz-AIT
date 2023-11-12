@@ -15,11 +15,16 @@ public class HomeWork4 {
         //Task2
         System.out.println("Enter a value char");
         Scanner newScanner = new Scanner(System.in);
-        int myChar = newScanner.nextInt();
-        char ch = (char) myChar;
-        System.out.println("Symbol char is: " +  ch);
+        String myChar = newScanner.nextLine();
+        
+        char ch = myChar.charAt(0);
+        System.out.println((int)ch);
+
+        // System.out.println((int)'A');
+        // System.out.println(+'A');
 
         //Task3
+        
         System.out.println("Enter a value variable 1");
         Scanner newVariable = new Scanner(System.in);
         int num1 = newVariable.nextInt();
