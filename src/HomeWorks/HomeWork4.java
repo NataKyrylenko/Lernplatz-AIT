@@ -16,7 +16,8 @@ public class HomeWork4 {
         System.out.println("Enter a value char");
         Scanner newScanner = new Scanner(System.in);
         int myChar = newScanner.nextInt();
-        System.out.println("Char value is: " + (char)myChar);
+        char ch = (char) myChar;
+        System.out.println("Symbol char is: " +  ch);
 
         //Task3
         System.out.println("Enter a value variable 1");
