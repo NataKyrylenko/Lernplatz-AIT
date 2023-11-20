@@ -4,25 +4,25 @@ import java.util.Scanner;
 
 public class HomeWork10 { 
     //Task1
-    //  static void printCube() {
-    //       int  n = 0;
-    //       int y = 0;
-    //         while (n<3) {
-    //         n++;
-    //         y = n*n*n;
-    //         //n = n*n*n;
-    //         System.out.println(y);  
-    //         }
+     static void printCube() {
+          int  n = 0;
+          int y = 0;
+            while (n<3) {
+            n++;
+            y = n*n*n;
+            //n = n*n*n;
+            System.out.println(y);  
+            }
             
-    //  }
+     }
      public static void main(String[] args) {
-      //printCube();
+      printCube();
            
      //Task2
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter the number from o to 100. You have 4 attempts to guess the number");
+    System.out.println("Enter the number from 0 to 100. You have 4 attempts to guess the number");
     int att = 0;
-    
+     
     while (att<4) {
         int rand = scanner.nextInt();
         int x = 75;
