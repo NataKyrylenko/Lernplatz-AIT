@@ -28,7 +28,7 @@ public class HomeWork10 {
         int x = 75;
         
         if (rand<x ) {
-            System.out.println("little");
+            System.out.println("is too small");
             att++;
             if (att==4){
                 System.out.println("Youre attempts are over");
@@ -36,7 +36,7 @@ public class HomeWork10 {
             }
         }
         else if (rand>x){
-            System.out.println("many");
+            System.out.println("is too big");
             att++;
             if (att==4){
                 System.out.println("Youre attempts are over");
