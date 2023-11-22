@@ -25,7 +25,7 @@ static void printResult (){
 //Task2
 static void printTriangle (){
     int t = 1;
-    while (t<=6) {
+    while (t<=10) {
         int e = 1;
         while (e<=t) {
             System.out.print(e);
