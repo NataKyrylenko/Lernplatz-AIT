@@ -1,7 +1,7 @@
 
-package Spielplatz;
-import java.util.Scanner;
 
+//package Spielplatz;
+import java.util.Scanner;
 
 public class Lection6 {
 

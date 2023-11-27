@@ -1,4 +1,4 @@
-package Spielplatz;
+//package Spielplatz;
 public class Lection12 {
     public static void main(String[] args) {
       //System.out.println(countSum(5)); 
