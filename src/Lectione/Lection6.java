@@ -1,6 +1,6 @@
 
 
-//package Spielplatz;
+package Lectione;
 import java.util.Scanner;
 
 public class Lection6 {

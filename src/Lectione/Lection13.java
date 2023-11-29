@@ -1,4 +1,4 @@
-//package Spielplatz;
+package Lectione;
 import java.util.Scanner;
 
 
