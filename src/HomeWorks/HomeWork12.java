@@ -11,13 +11,18 @@ public class HomeWork12 {
 
     //Task1
     public static void printTabelle() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a number");
+        try(Scanner scanner = new Scanner(System.in)) {
+ System.out.println("Enter a number");
         int number = scanner. nextInt();
 
             for(int i = 1; i<=10; i++) {
                 System.out.println(number + " * " + i + " = " +i*number);
             }
+        }
+    
+       
+
+           // scanner.close();
     }
 
     //Task2
