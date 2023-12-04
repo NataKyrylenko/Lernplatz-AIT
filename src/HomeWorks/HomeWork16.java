@@ -20,19 +20,18 @@ public class HomeWork16 {
 
     //Task 2
     public static String concatString(String str1, String str2){
-       str1 = str1.substring(1);
-       str2 = str2.substring(1);
-       String result = str1.concat(str2).toUpperCase();
-       return result;
+        String result = str1.substring(1)+str2.substring(1);
+        return result.toUpperCase();
     }
 
     //Task 3
     public static String moveLetter(String letters){
-        char temporary = letters.charAt(0);
-        letters = letters.substring(1);
-        String charToStr = Character.toString(temporary);
-        String result = letters.concat(charToStr);
-        return result;
-    }
-    
-}
+        char temporary = letters.charAt(3);
+        String str2 = letters.substring(0,3);
+        return temporary + str2;
+    } }
+    // 
+        // 
+        // 
+// } char[] str = letters.toCharArray();
+//          return str[3]+ letters.substring(0,3);

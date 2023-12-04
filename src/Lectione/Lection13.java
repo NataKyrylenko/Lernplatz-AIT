@@ -12,15 +12,16 @@ public class Lection13 {
 
 
     public static int findPower (){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter a value");
-        int num = scanner.nextInt();
-        System.out.println("Enter the power of the number ");
-        int power = scanner.nextInt();
-        int result = 1;
-        for(int i=1; i<=power; i++){
-            result = result*num;   
-        }return result;
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Enter a value");
+            int num = scanner.nextInt();
+            System.out.println("Enter the power of the number ");
+            int power = scanner.nextInt();
+            int result = 1;
+            for(int i=1; i<=power; i++){
+                result = result*num;   
+            }return result;
+        }
 
     }
     /*Написать метод, возвращающий  сумму 
