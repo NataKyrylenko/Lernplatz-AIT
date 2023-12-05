@@ -1,11 +1,15 @@
-package HomeWorks.Homework18;
+package HomeWorks.HomeWork19;
 
 public class Temperature {
 
-    public int celsius;
+     double gradus;
 
-    public celsius (){
-        this.celsius = celsius;
-        return 5*(celsius - 32)/9;
-    }
+    public Temperature(int gradus){
+        this.gradus = gradus;
+        
+       
+     }
+     double getCelsius(){
+        return Math.round(5*(gradus - 32)/9);
+     }
 }
