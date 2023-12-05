@@ -13,7 +13,7 @@ public class Main {
         Rectangle rectangle1 = new Rectangle(12,4);
         Rectangle rectangle2 = new Rectangle(5,3);
         Rectangle rectangle3 = new Rectangle(8,7);
-        Rectangle rectangle4 = new Rectangle(15,10);
+        Rectangle rectangle4 = new Rectangle(15,9);
 
 
 
