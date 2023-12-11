@@ -5,6 +5,8 @@ public class Main {
         String [] salon = {"Audi","BMW","Ford","Honda","Hyundai","Kia","Mazda"};
         
         Cars car = new Cars(salon);
+
+        
         car.findCar("bmw");
         car.findCar("Mercedes");
         car.findCar("Kia");
