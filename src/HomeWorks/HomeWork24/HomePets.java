@@ -20,10 +20,7 @@ class Dog extends HomePets {
     public Dog( String food, double amount, String name){
         super(food, amount, name);
         
-    }
-    public void needsFood( String food, double amount, String name){
-        System.out.println(name + " need " + food + amount + " kg");
-    }   
+    }  
 }
 class Labrador extends Dog{
     private String toys;
@@ -32,39 +29,26 @@ class Labrador extends Dog{
         super(food, amount, name);
         this.toys = toys;
     }
-    public void needsFood(String food, double amount, String name){
-        System.out.println( name + " need " + food + amount + " kg");
-    } 
-    public void needsToys(String toys, String name){
+    
+    public void playedToys(String toys, String name){
         System.out.println(name + " is playing with a " + toys);
     }
-
 }
-
 class Cat extends HomePets {
     public Cat( String food, double amount, String name){
         super(food, amount, name);
     }
-    public void needsFood( String food, double amount, String name){
-        System.out.println(name + " need " + food + amount + " kg");
-    }   
+      
 }
-
 class Parrot extends HomePets {
     public Parrot( String food, double amount, String name){
         super(food, amount, name);
-    }
-    public void needsFood( String food, double amount, String name){
-        System.out.println(name + " need " + food + amount + " kg");
     }   
 }
 class Fish extends HomePets {
     public Fish( String food, double amount, String name){
         super(food, amount, name);
-    }
-    public void needsFood( String food, double amount, String name){
-        System.out.println(name + " need " + food + amount + " kg");
-    }   
+    }  
 }
 
 
