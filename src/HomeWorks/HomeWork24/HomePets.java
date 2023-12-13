@@ -41,27 +41,30 @@ class Labrador extends Dog{
 
 }
 
+class Cat extends HomePets {
+    public Cat( String food, double amount, String name){
+        super(food, amount, name);
+    }
+    public void needsFood( String food, double amount, String name){
+        System.out.println(name + " need " + food + amount + " kg");
+    }   
+}
 
+class Parrot extends HomePets {
+    public Parrot( String food, double amount, String name){
+        super(food, amount, name);
+    }
+    public void needsFood( String food, double amount, String name){
+        System.out.println(name + " need " + food + amount + " kg");
+    }   
+}
+class Fish extends HomePets {
+    public Fish( String food, double amount, String name){
+        super(food, amount, name);
+    }
+    public void needsFood( String food, double amount, String name){
+        System.out.println(name + " need " + food + amount + " kg");
+    }   
+}
 
-
-
-// class Cat extends HomePets {
-//     public void needsFood(){
-//         System.out.println("Cat need Whiskas");
-//     }
-// }
-
-// class Parrot extends HomePets {
-//     public void needsFood(){
-//         System.out.println("Parrot need grain");
-//     }
-    
-// }
-
-// class Fish extends HomePets {
-//     public void needsFood(){
-//         System.out.println("Fish need Vipagran");
-//     }
-    
-// }
 
