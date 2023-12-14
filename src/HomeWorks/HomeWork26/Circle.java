@@ -1,12 +1,13 @@
 package HomeWorks.HomeWork26;
 
 class Circle extends Figures{
+    private double radius;
     
-    public Circle(double radius, double width,double length){
-        super(radius,width,length);
+    public Circle(double radius){
+        this.radius = radius;
     }
     
-    public double area(double radius){
-        return Math.PI * (getRadius()*2);
+    public double area(){
+        return Math.PI * (radius*radius);
     }
 }

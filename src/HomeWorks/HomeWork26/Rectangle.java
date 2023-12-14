@@ -2,12 +2,15 @@ package HomeWorks.HomeWork26;
 
 class Rectangle extends Figures {
 
-    public Rectangle(double radius, double width, double length){
-        super(radius, width, length);
-    }
+    private double width;
+    private double length;
 
-    public double area(double width, double length){
-        return getWidth()*getLength();
+    public Rectangle(double width, double length){
+        this.width = width;
+        this.length = length;
     }
     
+    public double area(){
+        return width*length;
+    }
 }
