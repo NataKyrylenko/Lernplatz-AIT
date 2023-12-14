@@ -1,32 +1,56 @@
 package HomeWorks.HomeWork25;
 
-public class Trucks {
+public class Car {
     
         private String model;
         private String manufacturer;
         private int year;
         private String color;
-        private int maxWeight;
-        private int currentWeight = 0;
-        private int currentFuel = 0;
-        private int maxFuel;
         private String owner;
+        
 
-        public Trucks(String model,
+        public Car(String model,
                  String manufacturer,
                  int year,
                  String color,
-                 int maxWeight,
-                 int maxFuel,
                  String owner) {
+            
         this.model = model;
         this.manufacturer = manufacturer;
         this.year = year;
         this.color = color;
-        this.maxWeight = maxWeight;
-        this.maxFuel = maxFuel;
         this.owner = owner;
     }
+    public String getModel(){
+        return model;
+    }
+    public String getManufactured(){
+        return manufacturer;
+    }
+    public int getYear(){
+        return year;
+    }
+    public String getColor(){
+        return color;
+    }
+    public String getOwnwer(){
+        return owner;
+    }
+
+    // public String move(){
+    //     return ;
+    // }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model= " + model +
+                ", manufacturer=" + manufacturer +
+                ", year=" + year +
+                ", color= " + color +
+                '}';
+    }
+    
 
     public String getManufacturer() {
         return manufacturer;
@@ -109,17 +133,6 @@ public class Trucks {
         return maxWeight - currentWeight;
     }
 
-    @Override
-    public String toString() {
-        return "Truck{" +
-                "model= " + model +
-                ", manufacturer=" + manufacturer +
-                ", year=" + year +
-                ", color= " + color +
-                ", maxWeight=" + maxWeight +
-                ", maxFuel=" + maxFuel +
-                ", owner= " + owner +
-                '}';
-    }
+
 }
 

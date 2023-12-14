@@ -10,13 +10,7 @@ public class Main {
         // System.out.println(truck.b);
         // System.out.println(truck.s);
 
-        Trucks truck = new Trucks("SuperTruck",
-                "Volvo",
-                2020,
-                "red",
-                5000,
-                500,
-                "John Black");
+        Truck truck = new Truck("SuperTruck", "Volvo", 2020, "yellow", "Bill");
         System.out.println(truck);
 
         truck.load(1500);
@@ -34,36 +28,25 @@ public class Main {
         truck.unload(-1000);
         truck.unload(3000);
 
-        Trucks truck1 = new Trucks("SuperTruck1",
-                "MAN",
-                2018,
-                "black-yellow",
-                10000,
-                400,
-                "Jack White");
-
-        Truck passengeTruck = new Truck("BMW", "Porshe", 2023, "black", 1000, 340, "Bill");
-
-        passengeTruck.load(1100);
-        passengeTruck.move();
-        passengeTruck.setCurrentFuel(250);
-        passengeTruck.unload(500);
-
-
+        
+       Car passengerCar = new PassengerCar("BMW", "BMW", 2023, "red", "Smith", 5);
+        
+        Truck truck1 = new Truck("Volvo", "MAN", 2021, "black", "Duck");
+        
         int[] x = {1, 2};
         for (int i = 0; i < x.length; i++) {
             System.out.println(x[i]);
         }
 
-        Trucks[] trucks = {truck, truck1, passengeTruck};
+        Car[] cars = {truck, truck1, passengerCar};
         
-        for (int i = 0; i < trucks.length; i++) {
-            System.out.println(trucks[i]);
+        for (int i = 0; i < cars.length; i++) {
+            System.out.println(cars[i]);
         }
-        System.out.println(Arrays.toString(trucks));
+        System.out.println(Arrays.toString(cars));
         System.out.println();
 
-        for (Trucks tr : trucks) {
+        for (Car tr : cars) {
             System.out.println("truck " + tr.getManufacturer() + " : " + tr.getOwner());
         }
     }     
