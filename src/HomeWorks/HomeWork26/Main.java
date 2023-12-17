@@ -13,12 +13,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Figures[] figures = {new Circle(5), 
-                             new Rectangle(1, 2), 
-                             new Square(3, 3)};
+        Figures[] figures = {new Circle("Circle",5), 
+                             new Rectangle("Rectangle",1, 2), 
+                             new Square("Square",3, 3)};
 
         for(Figures fig : figures){
-            System.out.println(fig + " has area of " + fig.area());
+            System.out.println(fig.getName() + " has area of " + fig.area());
         }
     }
 }
