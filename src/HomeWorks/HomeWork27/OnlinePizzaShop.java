@@ -34,25 +34,46 @@ public class OnlinePizzaShop {
     public static void main(String[] args) {
         
     Scanner pizzaScanner = new Scanner(System.in);
-    String choice = pizzaScanner.nextLine();
 
-    PizzaChoice pizzaChoice = new PizzaChoice();
-       
-    if(choice.equals("1")){
-        pizzaChoice.choosePizza("Salami");
-        System.out.println("1");
-        }
-    else if("2".equals(choice)){
-        System.out.println("2");
-    }
-    else if("3".equals(choice)){
-        System.out.println("3");
-    }
-    else{
-        System.out.println("Invalid choice");
-    }
+    PizzaChoice choiceClass = new PizzaChoice();
+        do{
+            System.out.println("Hi, choose pizza: 1 - Salami, 2 - Margarita, 3 - Hawaii");
+            String pizzaChoise =  pizzaScanner.nextLine();
 
-    }
+            Pizza newPizza = choiceClass.choosePizza(pizzaChoise);
+            while(newPizza ==null){
+                System.out.println("You have made the wrong choise. Please chose pizza: 1 - Salami, 2 - Margarita, 3 - Hawaii");
+                pizzaChoise = pizzaScanner.nextLine();
+                newPizza = choiceClass.choosePizza(pizzaChoise);
+            }
 
+            newPizza.orderPizza();
+
+            System.out.println("Do you want to order another pizza? enter no if no or any other key to order another pizza ");
+        }while(!pizzaScanner.nextLine().equalsIgnoreCase("no"));
+        System.out.println("Thank you for your order! We hope to see you soon");
+}
+
+
+
+
+
+
+    // String choice = pizzaScanner.nextLine();
+    // if(choice.equals("1")){
+    //     pizzaChoice.choosePizza("Salami");
+    //     System.out.println("1");
+    //     }
+    // else if("2".equals(choice)){
+    //     System.out.println("2");
+    // }
+    // else if("3".equals(choice)){
+    //     System.out.println("3");
+    // }
+    // else{
+    //     System.out.println("Invalid choice");
+    // }
+
+    // }
 }
 

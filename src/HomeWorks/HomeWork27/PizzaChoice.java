@@ -2,7 +2,7 @@ package HomeWorks.HomeWork27;
 
 public class PizzaChoice {
 
-     Pizza choosePizza(String type){
+    public Pizza choosePizza(String type){
 
         switch (type){
 

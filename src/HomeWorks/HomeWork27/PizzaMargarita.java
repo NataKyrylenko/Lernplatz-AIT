@@ -5,6 +5,4 @@ class PizzaMargarita  extends Pizza{
     public PizzaMargarita(String name){
         super(name);
     }
-    
-    
 }
