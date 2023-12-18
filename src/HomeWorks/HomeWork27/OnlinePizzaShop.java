@@ -35,9 +35,11 @@ public class OnlinePizzaShop {
         
     Scanner pizzaScanner = new Scanner(System.in);
     String choice = pizzaScanner.nextLine();
+
     PizzaChoice pizzaChoice = new PizzaChoice();
        
-    if("1".equals(choice)){
+    if(choice.equals("1")){
+        pizzaChoice.choosePizza("Salami");
         System.out.println("1");
         }
     else if("2".equals(choice)){
@@ -52,6 +54,5 @@ public class OnlinePizzaShop {
 
     }
 
-
-    
 }
+
