@@ -1,30 +1,21 @@
 package Lectione.Lection29;
 
 public class Tree extends Plant{
-
-    public Tree(String name, int height, int age){
+     private static final int TREE_GROW_SEASON = 5;
+    
+     public Tree(String name, int height, int age){
         super(name, height, age);
     }
-    void doSpring(){
-        System.out.println(name + " has grown in Spring, " + (height +4));
-    }
-
-    void doSummer(){
-        System.out.println(name + " has grown in Summer, " + (height +4));
-    }
-
-    void doAutumn(){
-        System.out.println(name + " is not growing in Autumn, " + (height +4));
-    }
-
-    void doWinter(){
-        System.out.println(name + " is not growing in Winter, " + (height +4));
-    }
-    void seasons(){
-        doSpring();
-        doSummer();
-        doAutumn();
-        doWinter();;
-    }
     
+    public void doSummer(){
+        setHeight(getHeight()+getGrowPerSeason());
+        System.out.println(getName() + " has grown in Summer, the height is: " + getHeight());
+    }
+    public void doAutumn(){
+        System.out.println(getName() + " is not grow in Autumn, the height is: " + getHeight());
+       }
+    
+     public int getGrowPerSeason(){
+        return TREE_GROW_SEASON;
+     }
 }

@@ -1,29 +1,24 @@
 package Lectione.Lection29;
 
 public class Flower extends Plant{
+    private static final int FLOWER_GROW_SEASON = 15;
 
     public Flower(String name, int height, int age){
         super(name, height, age);
     }
-    void doSpring(){
-        System.out.println(name + " has grown in Spring, " + (height +15));
+    
+    public void doSummer(){
+        
+        System.out.println(getName() + " does not grown in Summer, but flourishing, the height is " + getHeight());
     }
+    public void doAutumn(){
+        setHeight(0);
+        System.out.println(getName() + " is cut to zero in Autumn " + getHeight());
+       }
+    
+     public int getGrowPerSeason(){
+        return FLOWER_GROW_SEASON;
+     }
+    
 
-    void doSummer(){
-        System.out.println(name + " is not growing in Summer, " + (height +15));
-    }
-
-    void doAutumn(){
-        System.out.println(name + " is not growing in Autumn, " + (height +15));
-    }
-
-    void doWinter(){
-        System.out.println(name + " is not growing in Winter, " + height);
-    }
-    void seasons(){
-        doSpring();
-        doSummer();
-        doAutumn();
-        doWinter();
-    }
 }
