@@ -5,6 +5,5 @@ package HomeWorks.HomeWork31;
 
     double findArea();
     double findPerimeter();
-
     
 }

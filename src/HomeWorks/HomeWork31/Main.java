@@ -3,8 +3,8 @@ package HomeWorks.HomeWork31;
 public class Main {
     public static void main(String[] args) {
 
-        Rectangle rectangle = new Rectangle(2, 3);
-        Circle circle = new Circle(3);
+        Shape rectangle = new Rectangle(2, 3);
+        Shape circle = new Circle(3);
 
         System.out.println("Perimetr of Rectangle = " + rectangle.findPerimeter());
         System.out.println("Perimetr of Circle  = " + circle.findPerimeter());

@@ -17,5 +17,4 @@ class Rectangle implements Shape {
     public double findPerimeter(){
         return 2 * (length + width);
     }
-
 }
