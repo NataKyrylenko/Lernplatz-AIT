@@ -1,7 +1,7 @@
 package Lectione.Lectione32;
 
 interface WordString {
-    
-    String changeString(String word);
+    boolean checkWord(String word);
+    String transformWord(String word);
 
 }
