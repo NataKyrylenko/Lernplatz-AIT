@@ -38,7 +38,7 @@ public class Company {
         public void display(){
             for(Employee employee : employees){
                 System.out.println(employee.toString());
-        }
+                }
     }
 
     public double sumSalary(){

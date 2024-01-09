@@ -3,24 +3,50 @@ package Lectione.Lection33;
 public class Main {
 
     public static void main(String[] args) {
-        Company company = new Company(3);
 
-        Employee salesManager1 = new SalesManager(1, "Willi", "Wonka", 2, 4, 10);
-        Employee wageEmployee1 = new WageEmployee(2, "Olga", "Smidt", 40, 8);
-        Employee salesManager2 = new SalesManager(3, "Ali", "Wind", 7, 75,25);
-        Employee wageManager3 = new WageEmployee(4, "Bill", "Muller", 4, 50);
+        Employee salesManager1 = new SalesManager(7,
+                "John",
+                "Smith",
+                80,
+                100000,
+                0.05);
 
-        company.addEmployee(wageEmployee1);
+        Employee salesManager2 = new SalesManager(1,
+                "Ann",
+                "Black",
+                30,
+                100000,
+                0.5);
+
+
+        Employee salesManager3 = new SalesManager(4,
+                "Mary",
+                "Kraft",
+                65,
+                100000,
+                0.3);
+
+        Employee wageEmployee1 = new WageEmployee(2, "John", "Snow", 50, 20.5);
+        Employee wageEmployee2 = new WageEmployee(45, "Ann", "Brown", 30, 6.0);
+        Employee wageEmployee3 = new WageEmployee(21, "Garry", "Potter", 80, 12.9);
+
+        Company company = new Company(6);
         company.addEmployee(salesManager1);
         company.addEmployee(salesManager2);
-        company.removeEmployee(salesManager1);
-        company.addEmployee(wageManager3);
+        company.addEmployee(salesManager3);
+        company.addEmployee(wageEmployee1);
+        company.addEmployee(wageEmployee2);
+        company.addEmployee(wageEmployee3);
 
-        System.out.println("Employees in the company: ");
+        System.out.println("List of employees");
         company.display();
 
-        System.out.println("Total salary for all employees: " + company.sumSalary());
-        
+        System.out.println("-----remove sales manager 1");
+        System.out.println(company.removeEmployee(salesManager1));
+        company.display();
+
+        System.out.println("Everybody's salary = " + company.sumSalary());
+
     }
     
 }
