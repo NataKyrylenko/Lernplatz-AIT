@@ -1,6 +1,6 @@
 package Lectione.Lection33;
 
-public abstract class Employee {
+public class Employee implements Comparable<Employee> {
 
     private int id;
     private String name;
@@ -34,5 +34,20 @@ public abstract class Employee {
     public String toString() {
         return "Employee id=" + id + ", name=" + name + ", secondName=" + secondName + ", hour=" + hour;
     }
-    
+
+    // public int compareTo(Employee employee){
+    //     return getSecondName().compareTo(employee.getSecondName());
+    // }
+
+    // public int compareTo(Employee employee){
+    //     return getId() - employee.getId();
+    // }
+
+    public int compareTo(Employee employee){
+        int employeeSecondName = getSecondName().compareTo(employee.getSecondName());
+        if(employeeSecondName == 0){
+           return Integer.compare(getId(),employee.getId());
+        }
+        return employeeSecondName;
+    }
 }

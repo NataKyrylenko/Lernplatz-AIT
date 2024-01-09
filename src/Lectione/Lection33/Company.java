@@ -29,17 +29,17 @@ public class Company {
         return false;
     }
 
-    // public void display(){
-    //     for(int i = 0; i < companySize; i++){
-    //         System.out.println(employees[i]);
-    //     }
-    // }
-
-        public void display(){
-            for(Employee employee : employees){
-                System.out.println(employee.toString());
-                }
+    public void display(){
+        for(int i = 0; i < companySize; i++){
+            System.out.println(employees[i]);
+        }
     }
+
+    //     public void display(){
+    //         for(Employee employee : employees){
+    //             System.out.println(employee.toString());
+    //             }
+    // }
 
     public double sumSalary(){
         double sum= 0;
@@ -48,5 +48,4 @@ public class Company {
         }
         return sum;
     }
-    
 }
