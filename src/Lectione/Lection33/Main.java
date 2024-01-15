@@ -17,6 +17,7 @@ public class Main {
 
         Company company = new Company(6);
         company.addEmployee(salesManager1);
+        
         company.addEmployee(salesManager2);
         company.addEmployee(salesManager3);
         company.addEmployee(wageEmployee1);
