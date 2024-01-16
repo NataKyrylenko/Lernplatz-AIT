@@ -1,6 +1,5 @@
 package HomeWorks;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class HomeWork17 {
@@ -60,28 +59,5 @@ public class HomeWork17 {
         }
         return res;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+   
 }

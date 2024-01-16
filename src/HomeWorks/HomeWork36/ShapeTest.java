@@ -2,25 +2,27 @@ package HomeWorks.HomeWork36;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
 
 public class ShapeTest {
-    Rectangle rectangle = new Rectangle(0,0);
-    Circle circle = new Circle(0);
-
+    private ShapeCalculator shapeCalculator = new ShapeCalculator();
 
     @Test
-    public void testFindArea() {
-        assertEquals(6,rectangle.findArea(4,4));
-        assertEquals(3, circle.findArea(4,5));
+    public void test_zeroShape(){
+        Shape[] actual = {};
+        assertEquals(0, shapeCalculator.totalSquare(actual));
     }
-
 
     @Test
-    public void testFindPerimeter() {
-
+    public void test_oneShape(){
+        Shape[] actual = {new Rectangle(5,10)};
+        assertEquals(50.0, shapeCalculator.totalSquare(actual));
     }
+
+    @Test
+    public void test_twoShape(){
+        Shape[] actual = {new Rectangle(5,10), new Circle(10)};
+        assertEquals(364.0, shapeCalculator.totalSquare(actual));
+    }
+
     
 }

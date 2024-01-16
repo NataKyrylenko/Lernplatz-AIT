@@ -1,6 +1,6 @@
 package Lectione.Lectione32;
 
-class ChangeToUpp implements WordString {
+class ChangeToUpp implements WordsChecker {
     public boolean checkWord(String word){
         return word.length()==3;
     }

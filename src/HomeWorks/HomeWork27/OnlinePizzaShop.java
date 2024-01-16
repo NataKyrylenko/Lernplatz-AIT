@@ -33,25 +33,26 @@ import java.util.Scanner;
 public class OnlinePizzaShop {
     public static void main(String[] args) {
         
-    Scanner pizzaScanner = new Scanner(System.in);
+    try (Scanner pizzaScanner = new Scanner(System.in)) {
+        PizzaChoice choiceClass = new PizzaChoice();
+            do{
+                System.out.println("Hi, choose pizza: 1 - Salami, 2 - Margarita, 3 - Hawaii");
+                String pizzaChoise =  pizzaScanner.nextLine();
 
-    PizzaChoice choiceClass = new PizzaChoice();
-        do{
-            System.out.println("Hi, choose pizza: 1 - Salami, 2 - Margarita, 3 - Hawaii");
-            String pizzaChoise =  pizzaScanner.nextLine();
+                Pizza newPizza = choiceClass.choosePizza(pizzaChoise);
+                while(newPizza ==null){
+                    System.out.println("You have made the wrong choise. Please chose pizza: 1 - Salami, 2 - Margarita, 3 - Hawaii");
+                    pizzaChoise = pizzaScanner.nextLine();
+                    newPizza = choiceClass.choosePizza(pizzaChoise);
+                }
 
-            Pizza newPizza = choiceClass.choosePizza(pizzaChoise);
-            while(newPizza ==null){
-                System.out.println("You have made the wrong choise. Please chose pizza: 1 - Salami, 2 - Margarita, 3 - Hawaii");
-                pizzaChoise = pizzaScanner.nextLine();
-                newPizza = choiceClass.choosePizza(pizzaChoise);
-            }
+                newPizza.orderPizza();
 
-            newPizza.orderPizza();
+                System.out.println("Do you want to order another pizza? enter no if no or any other key to order another pizza ");
+            }while(!pizzaScanner.nextLine().equalsIgnoreCase("no"));
+    }
 
-            System.out.println("Do you want to order another pizza? enter no if no or any other key to order another pizza ");
-        }while(!pizzaScanner.nextLine().equalsIgnoreCase("no"));
-        System.out.println("Thank you for your order! We hope to see you soon");
+    System.out.println("Thank you for your order! We hope to see you soon");
 }
 
 

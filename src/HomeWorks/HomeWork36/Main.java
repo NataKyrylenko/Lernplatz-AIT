@@ -3,35 +3,19 @@ package HomeWorks.HomeWork36;
 public class Main {
     public static void main(String[] args) {
 
-//         Shape rectangle = new Rectangle(2, 3);
-//         Shape circle = new Circle(3);
+        Shape circle = new Circle(10.0);
 
-//         System.out.println("Perimetr of Rectangle = " + rectangle.findPerimeter());
-//         System.out.println("Perimetr of Circle  = " + circle.findPerimeter());
+        System.out.println("Circle perimeter: " + circle.findPerimeter());
+        System.out.println("Circle area: " + circle.findArea());
 
-//         System.out.println("Area of Rectangle = " + rectangle.findArea());
-//         System.out.println("Area of Circle = " + circle.findArea());
+        Shape rectangle = new Rectangle(10.0,15.0);
+        System.out.println("Rectangle perimeter: " + rectangle.findPerimeter());
+        System.out.println("Rectangle area: " + rectangle.findArea());
 
+        Shape[] shapes ={circle,rectangle};
 
-//         Shape[] shapes = {rectangle, circle};
-//         double calcArea = totalArea(shapes);
-//         double calcPerimeter = totalPerimeter(shapes);
-//         System.out.println("Total area of Shapes = " + calcArea);
-//         System.out.println("Total perimeter of Shapes = " + calcPerimeter);
-//  }
-//         public static double totalArea(Shape[] shapes){
-//             double calcArea = 0;
-//             for(Shape shape: shapes){
-//                 calcArea +=shape.findArea();
-//             }
-//             return calcArea;
-//         }
-
-//         public static double totalPerimeter(Shape[] shapes){
-//             double calcPerimeter = 0;
-//             for(Shape shape: shapes){
-//                 calcPerimeter +=shape.findPerimeter();
-//             }
-//             return calcPerimeter;
-         }
+        ShapeCalculator shapeCalculator = new ShapeCalculator();
+        System.out.println("Total square is: " + shapeCalculator.totalSquare(shapes));
+    
+    }
 }

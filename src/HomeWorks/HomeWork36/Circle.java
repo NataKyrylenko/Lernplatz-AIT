@@ -1,6 +1,6 @@
 package HomeWorks.HomeWork36;
 
-class Circle implements Shape{
+public class Circle implements Shape{
 
     private double radius;
 
@@ -15,5 +15,6 @@ class Circle implements Shape{
         return Math.round(2 * Math.PI * radius); // C=2*p*r
     }
 
+   
     
 }

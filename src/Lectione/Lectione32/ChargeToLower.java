@@ -1,6 +1,6 @@
 package Lectione.Lectione32;
 
-class ChargeToLower implements WordString{
+class ChargeToLower implements WordsChecker {
     public boolean checkWord(String word){
         return word.length() == 4;
     }

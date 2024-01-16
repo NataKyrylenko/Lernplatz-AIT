@@ -1,6 +1,6 @@
 package HomeWorks.HomeWork36;
 
-class Rectangle implements Shape {
+public class Rectangle implements Shape {
 
     private double length;
     private double width;
@@ -17,4 +17,6 @@ class Rectangle implements Shape {
     public double findPerimeter(){
         return 2 * (length + width);
     }
+
+    
 }

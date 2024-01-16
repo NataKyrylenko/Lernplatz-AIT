@@ -1,6 +1,6 @@
 package Lectione.Lectione32;
 
-class ChargeStar implements WordString{
+class ChargeStar implements WordsChecker{
     public boolean checkWord(String word){
         return word.length() == 5;
     }

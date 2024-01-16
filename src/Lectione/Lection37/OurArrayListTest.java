@@ -1,9 +1,10 @@
 package Lectione.Lection37;
 
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 public class OurArrayListTest {
     
@@ -13,8 +14,6 @@ public class OurArrayListTest {
     public void setup(){
         list = new OurArrayList<>();
     }
-
-
     @Test
     public void testAppendGet_emptyList_addsOneeElement() {
         list.append(5);

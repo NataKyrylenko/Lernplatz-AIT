@@ -73,11 +73,5 @@ public class OurArrayList<E> implements OurList<E> {
         size = 0;
     }
 
-    @Override
-    public String toString() {
-        return "OurArrayList " + Arrays.toString(source) + "";
-    }
-    
-
     
 }

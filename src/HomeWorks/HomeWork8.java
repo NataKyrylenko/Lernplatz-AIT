@@ -11,16 +11,18 @@ public class HomeWork8 {
     //Task 1
     static double radiusCircle() {
         System.out.println("Enter radius");
-        Scanner scanner = new Scanner(System.in);
-        int area = scanner.nextInt();
-        return Math.PI*(area*area);
+        try (Scanner scanner = new Scanner(System.in)) {
+            int area = scanner.nextInt();
+            return Math.PI*(area*area);
+        }
     }
 
     //Task 2
     static int temp () {
         System.out.println("Enter Fahrenheit value");
-        Scanner scanner = new Scanner(System.in);
-        int gradus = scanner. nextInt();
-        return 5*(gradus-32)/9;
+        try (Scanner scanner = new Scanner(System.in)) {
+            int gradus = scanner. nextInt();
+            return 5*(gradus-32)/9;
+        }
     }
 }
