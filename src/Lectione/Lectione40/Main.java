@@ -11,6 +11,16 @@ public class Main {
         System.out.println(items);
 
 
+    OurMape<Integer,String> ourMap = new OurHashMap<>();
+    ourMap.put(3, "d");
+    ourMap.put(2, "b");
+    ourMap.put(1, "a");
+
+
+
+
+
+
         //добавить ел
         items.put(700, "TV");
         items.put(1500,"Notebook");
