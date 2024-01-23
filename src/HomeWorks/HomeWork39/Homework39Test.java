@@ -16,7 +16,7 @@ public class Homework39Test {
     public void shortestLongest_shortestFirst_test(){
         assertEquals("a",homework.findString(Arrays.asList("bb", "a", "ee", "ccc")));
     }
-@Test
+    @Test
     public void shortestLongest_longesFirst_test(){
         assertEquals("a",homework.findString(Arrays.asList("bb", "aaa", "ee", "c")));
     }

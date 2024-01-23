@@ -1,11 +1,11 @@
 package Lectione.Lection37;
 
 import java.util.ArrayList;
-import java.util.Collections;
+//import java.util.Collections;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args, List<String> Collections) {
         /* Конструкторы ArrayList
     ArrayList() -создает пустой лист
     ArrayList( Collection collection) - создается  лист, в который добавляются все элементы коллекции  collection
@@ -74,8 +74,8 @@ public class Main {
     System.out.println("Is Khal Drogo in the list? " + names.contains("Khal Drogo"));
 
     // сортировка листов
-    Collections.sort(names);
-    System.out.println(names);
+    //  Collections.sort(names);
+    //  System.out.println(names);
 }
     
 }
