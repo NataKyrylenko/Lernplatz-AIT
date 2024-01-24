@@ -9,9 +9,7 @@ public class Person{
         this.age = age;
     }
 
-    public int compareTo(Person person){
-        return this.age - person.age;
-    }
+    
 
    
 }

@@ -1,4 +1,1 @@
-John 25
-Anna 16
-Bill 34
-Will 56
+John 25Anna 16Bill 34Will 56
